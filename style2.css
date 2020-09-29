@@ -1,0 +1,42 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+.nav{
+    background-color: #627350;
+    height:150px;
+    width:100vw;
+  }
+  .newsletter{
+    background-color:#EDECEC;
+     width:100vw;
+    height:223px;
+  }
+  .footer{
+    background-color: #47433D;
+    height:120px;
+     width:100vw;
+  }
+
+  .home{
+    background-color: grey;
+    width:100vw;
+    height:947px;
+  }
+  .categories{
+    width:100vw;
+    height:114px;
+    background-color: #475937;
+  }
+  .description{
+    background-color:#47433D;
+     width:100vw;
+    height:345px;
+    
+  }
+  .spacer{
+    background-color: white;
+    width:100vw;
+    height:111px;
+  }
