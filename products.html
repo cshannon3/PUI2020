@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css"/>
+    <script src="text.js"></script>
+</head>
+<body>
+    <!--NavBar -->
+    <nav class="nav">
+        <img class="logo" src="static/images/logo.png">
+         <div class ="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="products.html">Products</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link"  href="about.html">About Us</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
+      </div>
+          <div class ="search-bar">
+            <div class="search-icon" ><img src="static/icons/search.png"></img></div>
+           <div class="search-input"></div>
+
+          </div>
+          <div class ="socials">
+            <div class="social"><img class="social-icon" src="static/icons/mail.png"></img>
+          <p class="social-text">mud@gmail.com</p>
+          </div>
+          <div class="social"><img class="social-icon" src="static/icons/phone.png"></img>
+          <p class="social-text">1-100-897-6754</p>
+          </div>
+      <div class="social"><img class="social-icon" src="static/icons/instagram.png"></img>
+          <p class="social-text">@muddypaws</p>
+          </div>
+         </div>
+          <div class ="cart">
+            <p class="cart-text">Cart</p>
+            <img class="cart-icon" src="static/icons/shopping-cart.png"></img>
+          </div>
+       </nav> 
+       
+<!--Content -->
+    <div id="products-content">
+        <h2 id="product-title">Our Products</h2>
+        <div class="top-bar"></div>
+        <div class="filter-bar">
+            <div>
+            <h3>Filter</h3>
+            <div>
+                <h3>Animals</h3>
+                <div class="filter-options">
+                <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>Dogs
+                  </label>
+                  <div>
+                  <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>Cats
+                  </label></div>
+                  </div>
+            </div>
+            <div>
+                <h3>Categories</h3>
+                <div class="filter-options">
+                <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark">Backpacks</span>
+                  </label>
+                  <div>
+                  <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark">Harnesses</span>
+                  </label></div>
+                  <div>
+                    <label class="container">
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark">Trackers</span>
+                    </label></div>
+                </div>
+            </div>
+            <div>
+                <h3>Rating</h3>
+                <div class="filter-options">
+                <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark">4 Stars or highter</span>
+                  </label>
+                  <div>
+                  <label class="container">
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark">3 Stars or higher</span>
+                  </label></div>
+                  </div>
+                  
+            </div>
+            <div>
+                <h3>Price</h3>
+            <div>
+                <input type="range" id="volume" name="volume"
+                       min="0" max="11">
+                <label for="volume">price</label>
+              </div>
+              </div>
+            </div>
+        </div>
+        <div id="products">
+            <div class="product-card">
+                <img></img>
+                <h4>Product Name</h4>
+                <div class  = "items-row">
+                    <small>Avail in 4 colors</small>
+                    <span class="fa fa-star"> <b>4.2</b></span>
+                </div>
+                <p class="product-price">$200.0</p>
+            </div>
+            <div class="product-card">
+                <img></img>
+                <h4>Product Name</h4>
+                <div class  = "items-row">
+                    <small>Avail in 4 colors</small>
+                    <span class="fa fa-star"> <b>4.2</b></span>
+                </div>
+                <p class="product-price">$200.0</p>
+            </div>
+            <div class="product-card">
+                <img></img>
+                <h4>Product Name</h4>
+                <div class  = "items-row">
+                    <small>Avail in 4 colors</small>
+                    <span class="fa fa-star"> <b>4.2</b></span>
+                </div>
+                <p class="product-price">$200.0</p>
+            </div>
+            <div class="product-card">
+                <img></img>
+                <h4>Product Name</h4>
+                <div class  = "items-row">
+                    <small>Avail in 4 colors</small>
+                    <span class="fa fa-star"> <b>4.2</b></span>
+                </div>
+                <p class="product-price">$200.0</p>
+            </div>
+        </div>
+    </div>
+<!-- FOOTER -->
+
+    <div class= "newsletter">
+        <div class="newsletter-title">Join The Club</div>
+        <div  class="newsletter-entries">
+            <div class="entry-field">
+                <div class="field-label">First Name</div>
+                <div class="field-container">   First Name</div>
+            </div>
+            <div class="entry-field">
+                <div class="field-label">Last Name</div>
+                <div class="field-container">Last Name</div>
+            </div>
+            <div class="entry-field">
+                <div class="field-label">Email</div>
+                <div class="field-container"> Email</div>
+            </div>
+            <div class="sign-up-button">Sign Up</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-socials">
+            <img class="social-icon" src="static/icons/mail.png"></img>
+            <img class="social-icon" src="static/icons/phone.png"></img>
+            <img class="social-icon" src="static/icons/facebook.png"></img>
+            <img class="social-icon" src="static/icons/shopping-cart.png"></img>
+            <img class="social-icon" src="static/icons/twitter.png"></img>
+        </div>
+        <div class="footer-text">Site Created By Connor Shannon, 2020</div>
+    </footer>
+</body>
+</html>
