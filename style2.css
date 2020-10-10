@@ -50,13 +50,13 @@
 .nav{
     background-color: #627350;
     height:100px;
-    width:100vw - 100px;
+    width:90vw;
     display:grid;
     background-image: url("static/images/nav/nav-background.png");
     grid-template-columns: 120px 300px 1fr 160px 100px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px; /* padding - top / right / bottom / left*/
-    padding: 40px 50px 10px 40px;
+    padding: 40px 5vw 10px 5vw;
   }
   .logo{
     /* */
@@ -146,11 +146,9 @@
 /*FOOTER*/
 .newsletter{
     background-color:#EDECEC;
-    width:100vw - 200px;
+    width:90vw;
     height:200px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
+    padding: 30px 5vw 0px 5vw;
   }
   .newsletter-title{
       font-size: 26px;
@@ -198,7 +196,6 @@
   .footer{
     background-color: #47433D;
     height:120px;
-    width:100vw-100px;
     display: flex;
     padding-right: 100px;
     justify-self: end;
@@ -226,12 +223,12 @@
 /* HOME SCREEN*/
  
   #home{
-    width:100vw;
+    width:95vw;
     height:947px;
     background-image: url("static/images/home/splash.png");
     background-size: cover;
     display: flex;
-    padding-left:110px;
+    padding-left:5vw;
     flex-direction: column;
     justify-content: center;
   }
@@ -243,7 +240,6 @@
     height:114px;
     background-color: #475937;
   }
-
   .description{
     background-color:#47433D;
     height:345px;
@@ -303,8 +299,8 @@
     background: #F8F8F8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     justify-content: center;
-    width: 200px;
     min-width: 200px;
+    height: max-content;
 
   }
   .filter-title{
@@ -324,8 +320,6 @@
     gap: 12px;
     justify-content: space-evenly;
     flex-direction: column;
-    font-size: large;
-    font-weight: bolder;
   }
   .checkmark{
     font-size: medium;
