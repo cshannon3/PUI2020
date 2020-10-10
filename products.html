@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Raleway:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style2.css"/>
     <script src="text.js"></script>
@@ -11,7 +11,7 @@
 <body>
     <!--NavBar -->
     <nav class="nav">
-        <img class="logo" src="static/images/logo.png">
+        <img class="logo" src="static/images/nav/logo.png">
          <div class ="nav-links">
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="products.html">Products</a>
@@ -22,7 +22,6 @@
           <div class ="search-bar">
             <div class="search-icon" ><img src="static/icons/search.png"></img></div>
            <div class="search-input"></div>
-
           </div>
           <div class ="socials">
             <div class="social"><img class="social-icon" src="static/icons/mail.png"></img>
@@ -43,73 +42,66 @@
        
 <!--Content -->
     <div id="products-content">
-        <h2 id="product-title">Our Products</h2>
+        <h3 id="product-title" style="color: black;">Our Products</h3>
         <div class="top-bar"></div>
         <div class="filter-bar">
             <div>
-            <h3>Filter</h3>
+                Filter
             <div>
-                <h3>Animals</h3>
+               Animals
                 <div class="filter-options">
                 <label class="container">
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>Dogs
+                    <input type="checkbox">
+                    <span class="checkmark"> Dogs</span>
                   </label>
                   <div>
-                  <label class="container">
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>Cats
+                  <label class="container ">
+                    <input type="checkbox">
+                    <span class="checkmark">Cats</span>
                   </label></div>
                   </div>
             </div>
             <div>
-                <h3>Categories</h3>
+                Categories
                 <div class="filter-options">
                 <label class="container">
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="checkmark">Backpacks</span>
                   </label>
                   <div>
                   <label class="container">
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="checkmark">Harnesses</span>
                   </label></div>
                   <div>
                     <label class="container">
-                      <input type="checkbox" checked="checked">
+                      <input type="checkbox">
                       <span class="checkmark">Trackers</span>
                     </label></div>
                 </div>
             </div>
             <div>
-                <h3>Rating</h3>
+                Rating
                 <div class="filter-options">
                 <label class="container">
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox" >
                     <span class="checkmark">4 Stars or highter</span>
                   </label>
                   <div>
                   <label class="container">
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="checkmark">3 Stars or higher</span>
                   </label></div>
                   </div>
                   
             </div>
-            <div>
-                <h3>Price</h3>
-            <div>
-                <input type="range" id="volume" name="volume"
-                       min="0" max="11">
-                <label for="volume">price</label>
-              </div>
-              </div>
+     
             </div>
         </div>
         <div id="products">
             <div class="product-card">
-                <img></img>
-                <h4>Product Name</h4>
+                <img src="static/images/products/food-harness.jpg"></img>
+                <h4>Food Harness</h4>
                 <div class  = "items-row">
                     <small>Avail in 4 colors</small>
                     <span class="fa fa-star"> <b>4.2</b></span>
@@ -117,17 +109,17 @@
                 <p class="product-price">$200.0</p>
             </div>
             <div class="product-card">
-                <img></img>
-                <h4>Product Name</h4>
-                <div class  = "items-row">
+                <img src="static/images/products/backpack.jpg"></img>
+                <h4>Doggy Bag Backpack</h4>
+                <div class="items-row">
                     <small>Avail in 4 colors</small>
                     <span class="fa fa-star"> <b>4.2</b></span>
                 </div>
                 <p class="product-price">$200.0</p>
             </div>
             <div class="product-card">
-                <img></img>
-                <h4>Product Name</h4>
+                <img src="static/images/products/catpack.jpg"></img>
+                <h4>CatPack Backpack</h4>
                 <div class  = "items-row">
                     <small>Avail in 4 colors</small>
                     <span class="fa fa-star"> <b>4.2</b></span>
@@ -177,3 +169,12 @@
     </footer>
 </body>
 </html>
+
+       <!-- <div>
+                <h3>Price</h3>
+            <div>
+                <input type="range" id="volume" name="volume"
+                       min="0" max="11">
+                <label for="volume">price</label>
+              </div>
+              </div> -->

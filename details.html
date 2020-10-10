@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="style2.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="text.js"></script>
+    
 </head>
 <body>
     <!--NavBar -->
     <nav class="nav">
-        <img class="logo" src="static/images/logo.png">
+        <img class="logo" src="static/images/nav/logo.png">
          <div class ="nav-links">
           <a class="nav-link" href="index.html">Home</a>
           <a class="nav-link" href="products.html">Products</a>
@@ -39,16 +41,67 @@
           </div>
        </nav> 
 <!--Content -->
-     <div id="home">  
+     <div class="product-tile">  
+         <div class="img-previews">
+             <img src="static/images/details/blueberry.jpg"></img>
+             <img src="static/images/details/blueberry.jpg"></img>
+             <img src="static/images/details/blueberry.jpg"></img>
+             <img src="static/images/details/blueberry.jpg"></img>
+         </div>
+         <img class="center-img" src="static/images/details/blueberry.jpg"></img>
+         <div class="product-dets">
+             <div class ="product-title" >Doggy Bag Backpack</div>
+             <div class="gap"></div>
+             <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span> (130 reviewers)</span> 
+             </div>
+             <div class="gap"></div>
+             <hr>
+             <h3 style="color: black;">$200.00</h3>
+             <hr>
+             <p class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem amet bibendum feugiat sapien, commodo eu volutpat. Mauris nullam tristique nibh mi ultrices ullamcorper diam diam semper. Etiam vel, vel turpis potenti sem vivamus sodales odio id. Arcu tellus risus metus, vulputate risus.
+             </p>
+             <h4>Colors</h4>
+             <div class="colors-col">
+                <div><div class="color-box strawberry"></div>Strawberry</div>
+                <div class="selected"><div class="color-box blueberry"></div>Blueberry</div>
+                <div><div class="color-box crazyberry"></div>Crazyberry</div>
+                <div><div class="color-box fireorange"></div>Fire Orange</div>
+             </div>
+             <h4>Sizes</h4>
+             <div class="card-sizes">
+                <div>
+                    <img class="dog-tiny" src="static/images/details/dog.png"></img>
+                    <p>Tiny</p>
+                </div>
+                <div>
+                    <img class="dog-small" src="static/images/details/dog.png"></img>
+                    <p>Small</p>
+                </div>
+                <div class="selected">
+                    <img class="dog-medium" src="static/images/details/dog.png"></img>
+                    <p>Medium</p>
+                </div>
+                <div>
+                    <img class="dog-large" src="static/images/details/dog.png"></img>
+                    <p>Large</p>
+                </div>
+
+            </div>
+             <div class="sign-up-button">Add To Cart</div>
+         </div>
     </div>
-     <div class="categories">
+    <div class="details">
     </div>
-     <div class = "description">
-    </div>
-    <div class = "spacer">
+     <div class="reviews">
     </div>
 <!-- FOOTER -->
-
     <div class= "newsletter">
         <div class="newsletter-title">Join The Club</div>
         <div  class="newsletter-entries">
