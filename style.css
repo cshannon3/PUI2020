@@ -162,8 +162,9 @@
     margin-top: 20px;
     font-size: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
+    gap: 30px;
   }
 
   .entry-field{
@@ -179,6 +180,7 @@
         color:grey;
         font-size: 14px;
         line-height: 40px; 
+        padding-left: 5px;
         box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.2);
     }
     .field-label{
@@ -520,32 +522,3 @@
   .dog-large{height: 50px;}
 
 
-
-    /* ABOUT SCREEN*/
-  
- /* #about{
-  height: 1400px;
-  width: 100vw;
-  background-color: white;
-} */
-
-/*CONTACT SCREEN */
-/* 
-#contact{
- height: 940px;
- width: 100vw;
- background-color: white;
- align-items: center;
- display: flex;
- justify-content: center;
-}
- #contact > div {
-     margin-top: 180px;
-     width: 800px;
-     background-color: blue;
-     height: 560px;
-     display: grid;
-     grid-template-columns: repeat(4,1fr);
-     grid-template-rows: repeat(4,60px) 1fr 60px;
-     grid-gap: 10px; /* padding - top / right / bottom / left*/
-  
