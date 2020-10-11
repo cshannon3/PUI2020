@@ -44,6 +44,7 @@
   font-size: 26px;
   color: white;
 }
+
  small{
   font-size:10px;
  }
@@ -144,6 +145,9 @@
       height:25px;
       width:35px;
     }
+
+
+
 /*FOOTER*/
 .newsletter{
     background-color:#EDECEC;
@@ -292,7 +296,6 @@
 
   .top-bar{
     height: 50px;
-    /* grid-area: 2 / 2 / 2 / 4; */
     background: linear-gradient(180deg, #4F6C2D 0%, #85B54D 100%);
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -329,7 +332,6 @@
     display: flex;
   }
   #products{
-    /* grid-area: 3 / 3 / 3 / 4; */
     display:flex;
     margin-top: 30px;
     margin-left: 60px;
@@ -340,6 +342,13 @@
     .product-card{
       height: 300px;
       text-decoration: none;
+    }
+    .product-tile{
+      display: flex;
+      padding: 100px 0px;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
     }
     .product-card > h4{
       text-align: center;
@@ -363,35 +372,38 @@
         font-size: 20px;
       }
       
-.product-tile{
-  display: flex;
-  padding: 100px 0px;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+
+      /* DETAILS */
+
+
   .img-previews {
     flex-direction: column;
     display: flex;
   }
-  .img-previews > img{
-    height:80px;
-    width: 80px;
-    margin-bottom: 10px;
-  }
+    .img-previews > img{
+      height:80px;
+      width: 80px;
+      margin-bottom: 10px;
+    }
   .center-img{
     padding-right: 50px;
     height:450px;
     width: 350px;
   }
+
   .product-dets{
     width: 400px;
     padding: 30px;
     box-shadow: 0px 0px 10px grey;
   }
-  .color-box{
-    height: 23px;
-    width: 60px;
+  .product-description{
+    padding:20px 0px;
+    font-size: 14px;
+  }
+  .product-title{
+    font-family: 'Cutive', serif;
+    font-size:26px;
+    color:black;
   }
   .colors-col{
     display:  flex;
@@ -401,14 +413,14 @@
     height: 55px;
     padding: 10px 0px;
   }
-  .product-title{
-    font-family: 'Cutive', serif;
-    font-size:26px;
-    color:black;
-  }
-  .color-box:hover{
-    padding-bottom:10px ;
-  }
+    .color-box{
+      height: 23px;
+      width: 60px;
+    }
+    .color-box:hover{
+      padding-bottom:10px ;
+    }
+
   .dets-title{
     font-family: 'Cutive', serif; 
     font-size:24px;
@@ -418,42 +430,76 @@
     background-color: #F9F9F9;
     width: 90vw;
     padding: 5px 5vw;
-    height: 300px;
+    min-height: 300px;
   }
-  .features{
-    padding-top: 30px;
-    float: left;
-  }
-  .feature-list{
-    padding: 5px 20px;
-    font-size: small;
-    width: 350px;
-  }
-  .specs{
-    padding-top: 30px;
-    float: right;
-    width: 200px;
-  }
-  li{
-    padding-top:5px;
-  }
-  table{
-    border-top: 1px solid black;
-  }
-  th{
-  border-right: 1px solid #000000;
-  padding: 10px;
-  font-size:small;
-  }
-  td{
-    padding:5px;
-    font-size: small;
-  }
+    .features{
+      padding-top: 30px;
+      float: left;
+    }
+      .feature-list{
+        padding: 5px 20px;
+        font-size: small;
+        width: 350px;
+      }
+      li{
+        padding-top:5px;
+      }
+    .specs{
+      padding-top: 30px;
+      float: right;
+      width: 200px;
+    }
+      table{
+        border-top: 1px solid black;
+      }
+        th{
+        border-right: 1px solid #000000;
+        padding: 10px;
+        font-size:small;
+        }
+        td{
+          padding:5px;
+          font-size: small;
+        }
 
-  .product-description{
-    padding:20px 0px;
-    font-size: 14px;
-  }
+        .dets-title{
+          font-family: 'Cutive', serif; 
+          font-size:24px;
+          padding: 30px 5vw 5px 5vw;
+        }
+  
+        .review-box{
+          display: flex;
+          flex-direction: column;
+          gap:30px;
+          background-color: #F9F9F9;
+          width: 90vw;
+          padding: 30px 5vw;
+          min-height: 300px;
+        }
+        .review{
+          background-color:white;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          padding:30px 20px;
+        }
+        .review-title{
+          font-size: medium;
+          font-weight: bold;
+          padding-left: 5px;
+        }
+        .review-author{
+          font-size: 12px;
+          padding: 10px 0px;
+          font-weight: bold;
+        }
+        .review-content{
+          font-size: 14px;
+          
+        }
+          .yellow{
+            color:#FDEC50;
+            
+          }
   .card-sizes{
     padding:10px 0px;
     display:flex;
@@ -464,7 +510,6 @@
     font-size: 11px;
     text-align: center;
   }
-
   .strawberry{background-color: #B33045;}
   .blueberry{background-color: #6473F1;}
   .crazyberry{background-color: black;}
