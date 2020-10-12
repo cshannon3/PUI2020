@@ -147,7 +147,6 @@
     }
 
 
-
 /*FOOTER*/
 .newsletter{
     background-color:#EDECEC;
@@ -166,11 +165,9 @@
     align-items: center;
     gap: 30px;
   }
-
   .entry-field{
       width: 220px;
       height: 60px;
-     
    }
     .field-container{
         width:220px;
