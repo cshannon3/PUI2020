@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="static/icons/logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
 
-
 </head>
 
 <body>
@@ -45,12 +44,12 @@
     <!--Content -->
     <div class="product-tile">
         <div class="img-previews">
-            <img src="static/images/details/blueberry.jpg" alt="blueberry">
-            <img src="static/images/details/green.jpg" alt="green">
-            <img src="static/images/details/purple.jpg" alt="purple">
-            <img src="static/images/details/strawberry.jpg" alt="strawberry">
+            <img class = "product-img blueberry" src="static/images/details/blueberry.jpg" alt="blueberry">
+            <img class = "product-img strawberry"  src="static/images/details/green.jpg" alt="green">
+            <img class = "product-img crazyberry" src="static/images/details/purple.jpg" alt="purple">
+            <img class = "product-img fireorange" src="static/images/details/strawberry.jpg" alt="strawberry">
         </div>
-        <img class="center-img" src="static/images/details/blueberry.jpg" alt="blueberry">
+        <img id="center-img" class="center-img" src="static/images/details/blueberry.jpg" alt="blueberry">
         <div class="product-dets">
             <h2 class="product-title">Doggy Bag Backpack</h2>
             <div class="gap"></div>
@@ -72,34 +71,34 @@
             </p>
             <h4>Colors</h4>
             <div class="colors-col">
-                <div>
+                <div class="color strawberry">
                     <div class="color-box strawberry"></div>Strawberry
                 </div>
-                <div class="selected">
+                <div class="color blueberry selected">
                     <div class="color-box blueberry"></div>Blueberry
                 </div>
-                <div>
+                <div class="color crazyberry">
                     <div class="color-box crazyberry"></div>Crazyberry
                 </div>
-                <div>
+                <div class="color fireorange">
                     <div class="color-box fireorange"></div>Fire Orange
                 </div>
             </div>
             <h4>Sizes</h4>
             <div class="card-sizes">
-                <div>
+                <div class="size tiny">
                     <img class="dog-tiny" src="static/images/details/dog.png" alt="tiny">
                     <p>Tiny</p>
                 </div>
-                <div>
+                <div class="size small">
                     <img class="dog-small" src="static/images/details/dog.png" alt="small">
                     <p>Small</p>
                 </div>
-                <div class="selected">
+                <div class="size medium selected">
                     <img class="dog-medium" src="static/images/details/dog.png" alt="medium">
                     <p>Medium</p>
                 </div>
-                <div>
+                <div class="size large">
                     <img class="dog-large" src="static/images/details/dog.png" alt="large">
                     <p>Large</p>
                 </div>
@@ -114,7 +113,7 @@
                     <option value="q5">5</option>
                     <option value="q6">6</option>
                 </select></h4>
-            <div class="sign-up-button">Add To Cart</div>
+            <button class="sign-up-button" onclick="addToCart()">Add To Cart</button>
         </div>
     </div>
     <div class="dets-title">Details</div>
@@ -255,6 +254,9 @@
         </div>
         <div class="footer-text">Site Created By Connor Shannon, 2020</div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
+
 
 </html>
