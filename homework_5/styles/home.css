@@ -1,0 +1,55 @@
+/* HOME SCREEN*/
+ 
+#home{
+    width:95vw;
+    height:947px;
+    background-image: url("../static/images/home/splash.png");
+    background-size: cover;
+    display: flex;
+    padding-left:5vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home-box{
+    width: 540px;
+  }
+  .categories{
+    width:100vw;
+    height:114px;
+    background-color: #475937;
+  }
+  .description{
+    background-color:#47433D;
+    height:345px;
+    padding: 50px;
+  }
+    .description-content{
+      width: 70%;
+      float: left;
+    }
+    .home-contact{
+      float:right;
+      width:200px;
+      text-align: right;
+    }
+    .padded-home{
+      padding:20px 0px 10px 0px;
+    }
+    .padded-contact{
+      padding-bottom:20px ;
+    }
+  .home-text{
+    
+    color: white;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+  }
+
+  .spacer{
+    background-color: white;
+    width:100vw;
+    height:111px;
+  }
+
+

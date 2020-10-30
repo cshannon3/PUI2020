@@ -5,49 +5,26 @@
     <meta charset="UTF-8">
     <title>Muddy Paws</title>
     <link rel="shortcut icon" href="static/icons/logo.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/default.js"></script>
+
+    <link rel="stylesheet" href="styles/details.css" />
+    <script src="scripts/details.js"></script>
 
 </head>
 
-<body>
+<body onload="onLoadProduct()">
     <!--NavBar -->
-    <nav class="nav">
-        <img class="logo" src="static/images/nav/logo.png" alt="muddy paws logo">
-        <div class="nav-links">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="products.html">Products</a>
-            <a class="nav-link" href="blog.html">Blog</a>
-            <a class="nav-link" href="about.html">About Us</a>
-            <a class="nav-link" href="contact.html">Contact Us</a>
-        </div>
-        <div class="search-bar">
-            <div class="search-icon"><img src="static/icons/search.png" alt="search"></div>
-            <div class="search-input"></div>
-
-        </div>
-        <div class="socials">
-            <div class="social"><img class="social-icon" src="static/icons/mail.png" alt="mail">
-                <p class="social-text">mud@gmail.com</p>
-            </div>
-            <div class="social"><img class="social-icon" src="static/icons/phone.png" alt="phone">
-                <p class="social-text">1-100-897-6754</p>
-            </div>
-            <div class="social"><img class="social-icon" src="static/icons/instagram.png" alt="instagram">
-                <p class="social-text">@muddypaws</p>
-            </div>
-        </div>
-        <div class="cart">
-            <p class="cart-text">Cart</p>
-            <img class="cart-icon" src="static/icons/shopping-cart.png" alt="shopping cart">
-        </div>
+    <nav class="nav" id="nav">
     </nav>
+
     <!--Content -->
     <div class="product-tile">
         <div class="img-previews">
-            <img class = "product-img blueberry" src="static/images/details/blueberry.jpg" alt="blueberry">
-            <img class = "product-img strawberry"  src="static/images/details/green.jpg" alt="green">
-            <img class = "product-img crazyberry" src="static/images/details/purple.jpg" alt="purple">
-            <img class = "product-img fireorange" src="static/images/details/strawberry.jpg" alt="strawberry">
+            <img class="product-img blueberry" src="static/images/details/blueberry.jpg" alt="blueberry">
+            <img class="product-img strawberry" src="static/images/details/green.jpg" alt="green">
+            <img class="product-img crazyberry" src="static/images/details/purple.jpg" alt="purple">
+            <img class="product-img fireorange" src="static/images/details/strawberry.jpg" alt="strawberry">
         </div>
         <img id="center-img" class="center-img" src="static/images/details/blueberry.jpg" alt="blueberry">
         <div class="product-dets">
@@ -105,7 +82,7 @@
 
             </div>
             <h4>Quantity
-                <select name="quantity">
+                <select name="quantity" id="quantity">
                     <option value="q1">1</option>
                     <option value="q2">2</option>
                     <option value="q3">3</option>
@@ -152,8 +129,6 @@
                 </tr>
             </table>
         </div>
-
-
     </div>
     <div class="dets-title">Reviews</div>
     <div class="review-box">
@@ -163,14 +138,14 @@
                 <span class="fa fa-star fa-lg yellow"> </span>
                 <span class="fa fa-star-o fa-lg "></span>
                 <span class="fa fa-star-o fa-lg"></span>
-                <span class="fa fa-star-o fa-lg">  </span>
+                <span class="fa fa-star-o fa-lg"> </span>
                 <span class="review-title">Not Real Yak Wool</span>
             </div>
             <p class="review-author">
                 Joe Shmo on Aug 19th, 2019
             </p>
-            <p class="review-content"> 
-                There’s no way this is real Yak Wool. My guess is that it’s either llama or sheep!  
+            <p class="review-content">
+                There’s no way this is real Yak Wool. My guess is that it’s either llama or sheep!
             </p>
         </div>
         <div class="review">
@@ -186,7 +161,9 @@
                 Joe Shmo on Aug 19th, 2019
             </p>
             <p class="review-content">
-                I’ve been taking my chinchilla on hikes for years and have been looking for something just like this. Even though this is made for dogs, I thought I’d take a chance purchasing. Luckily this works great for chinchillas too! I’ll be telling all the chincilla owners I know about this place. Thanks!
+                I’ve been taking my chinchilla on hikes for years and have been looking for something just like this.
+                Even though this is made for dogs, I thought I’d take a chance purchasing. Luckily this works great for
+                chinchillas too! I’ll be telling all the chincilla owners I know about this place. Thanks!
             </p>
         </div>
         <div class="review">
@@ -202,10 +179,11 @@
                 Joe Shmo on Aug 19th, 2019
             </p>
             <p class="review-content">
-                I used to bring my 6 year old on all our hikes so he could carry all my stuff. But now with this backpack, I can have my dog carry it instead and leave my son at home.
+                I used to bring my 6 year old on all our hikes so he could carry all my stuff. But now with this
+                backpack, I can have my dog carry it instead and leave my son at home.
             </p>
         </div>
-      
+
         <div class="review">
             <div>
                 <span class="fa fa-star fa-lg yellow"></span>
@@ -219,43 +197,20 @@
                 Joe Shmo on Aug 19th, 2019
             </p>
             <p class="review-content">
-                Our dog has become way to pampered. We’ve been trying to teach her some personal responsibility by focing her to prepare her own dinner and carry her own shit around. This product has been great for this!
+                Our dog has become way to pampered. We’ve been trying to teach her some personal responsibility by
+                focing her to prepare her own dinner and carry her own shit around. This product has been great for
+                this!
             </p>
         </div>
 
     </div>
 
     <!-- FOOTER -->
-    <div class="newsletter">
-        <div class="newsletter-title">Join The Club</div>
-        <div class="newsletter-entries">
-            <div class="entry-field">
-                <div class="field-label">First Name</div>
-                <div class="field-container"> First Name</div>
-            </div>
-            <div class="entry-field">
-                <div class="field-label">Last Name</div>
-                <div class="field-container">Last Name</div>
-            </div>
-            <div class="entry-field">
-                <div class="field-label">Email</div>
-                <div class="field-container"> Email</div>
-            </div>
-            <div class="sign-up-button">Sign Up</div>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="footer-socials">
-            <img class="social-icon" src="static/icons/mail.png" alt="mail">
-            <img class="social-icon" src="static/icons/phone.png" alt="phone">
-            <img class="social-icon" src="static/icons/facebook.png" alt="facebook">
-            <img class="social-icon" src="static/icons/shopping-cart.png" alt=shopping-cart>
-            <img class="social-icon" src="static/icons/twitter.png" alt="twitter">
-        </div>
-        <div class="footer-text">Site Created By Connor Shannon, 2020</div>
-    </footer>
 
-    <script src="index.js"></script>
+    <div class="newsletter" id="newsletter">
+    </div>
+    <footer class="footer" id="footer">
+    </footer>
 </body>
 
 
