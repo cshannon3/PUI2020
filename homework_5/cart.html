@@ -5,54 +5,101 @@
     <meta charset="UTF-8">
     <title>Muddy Paws</title>
     <link rel="shortcut icon" href="static/icons/logo.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/cart.css" />
-    <script src="scripts/default.js"></script>
-    <script src="scripts/cart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
 </head>
 
-<body onload="onLoadCart()">
+<body>
     <!--NavBar -->
-    <nav class="nav" id="nav">
+    <nav class="nav">
+        <img class="logo" src="static/images/nav/logo.png" alt="muddy paws logo">
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="products.html">Products</a>
+            <a class="nav-link" href="blog.html">Blog</a>
+            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
+        </div>
+        <div class="search-bar">
+            <div class="search-icon"><img src="static/icons/search.png" alt="search"></div>
+            <div class="search-input"></div>
+
+        </div>
+        <div class="socials">
+            <div class="social"><img class="social-icon" src="static/icons/mail.png" alt="mail">
+                <p class="social-text">mud@gmail.com</p>
+            </div>
+            <div class="social"><img class="social-icon" src="static/icons/phone.png" alt="phone">
+                <p class="social-text">1-100-897-6754</p>
+            </div>
+            <div class="social"><img class="social-icon" src="static/icons/instagram.png" alt="instagram">
+                <p class="social-text">@muddypaws</p>
+            </div>
+        </div>
+        <div class="cart">
+            <p class="cart-text">Cart</p>
+            <img class="cart-icon" src="static/icons/shopping-cart.png" alt="shopping cart">
+        </div>
     </nav>
     <!--Content -->
-    <div >
-        <h3 class="cart-title">My Cart</h3>
+    <div class="main">
+        <h1 class="cart-title">My Cart</h1>
         <div class="main">
             <div class="cart-list" id="cart-items">
-               
+                <h4 class="cart-label">Cart</h4>
             </div>
             <div class="totals">
                 <div class="checkout-summary">
                     <h3 class="checkout-title">Order Total</h3>
                     <div class="checkout-row">
-                        <p class="checkout-subtitle">Subtotal:</p>
-                        <p class="checkout-text">$Sub</p>
+                    <p class="checkout-subtitle">Subtotal:</p>
+                    <p class="checkout-text">$Sub</p>
                     </div>
                     <div class="checkout-row">
                         <p class="checkout-subtitle">Est Shipping:</p>
                         <p class="checkout-text">$6.95</p>
                     </div>
-                    <div class="checkout-line-div">
-                        <div class="checkout-line"></div>
-                    </div>
+                  <div class="checkout-line-div"> <div class="checkout-line"></div></div>
                     <div class="checkout-row">
-                        <p class="checkout-subtitle checkout-lg">Total:</p>
-                        <p class="checkout-text checkout-lg">$Total</p>
+                    <p class="checkout-subtitle checkout-lg">Total:</p>
+                    <p class="checkout-text checkout-lg">$Total</p>
                     </div>
-                    <button type="button" class="btn btn-primary checkout-button">Sign In and Check Out</button>
+                    <button type="button" class="btn btn-primary checkout-button" >Sign In and Check Out</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- FOOTER -->
-
-    <div class="newsletter" id="newsletter">
+    <div class="newsletter">
+        <div class="newsletter-title">Join The Club</div>
+        <div class="newsletter-entries">
+            <div class="entry-field">
+                <div class="field-label">First Name</div>
+                <div class="field-container"> First Name</div>
+            </div>
+            <div class="entry-field">
+                <div class="field-label">Last Name</div>
+                <div class="field-container">Last Name</div>
+            </div>
+            <div class="entry-field">
+                <div class="field-label">Email</div>
+                <div class="field-container"> Email</div>
+            </div>
+            <div class="sign-up-button">Sign Up</div>
+        </div>
     </div>
-    <footer class="footer" id="footer">
+    <footer class="footer">
+        <div class="footer-socials">
+            <img class="social-icon" src="static/icons/mail.png" alt="mail">
+            <img class="social-icon" src="static/icons/phone.png" alt="phone">
+            <img class="social-icon" src="static/icons/facebook.png" alt="facebook">
+            <img class="social-icon" src="static/icons/shopping-cart.png" alt=shopping-cart>
+            <img class="social-icon" src="static/icons/twitter.png" alt="twitter">
+        </div>
+        <div class="footer-text">Site Created By Connor Shannon, 2020</div>
     </footer>
 
-
+    <script src="index.js"></script>
 </body>
 
 
