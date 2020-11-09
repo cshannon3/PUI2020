@@ -28,9 +28,6 @@ onLoadCart()
 */
 
 let product = null;
-
-
-
 // Called any time the page reloads in order to update the cart count
 function onLoad() {
   // cartCount is retrieved from local storage and added to the html
@@ -144,9 +141,9 @@ function onLoadCart() {
   });
   
   document.getElementById("checkout-subtotal").innerHTML = "$"+total;
-  console.log(total);
-
-  console.log(cart);
+  total+=20.95;
+  document.getElementById("checkout-total").innerHTML = "$"+total;
+  
   let c = `<h3 class="cart-text"> Cart </h3>   <hr class="cart-divider" />`;
   c += cart.filter((cartItem) => cartItem.inCart === true).map((item) =>{
    const id=item.id;
