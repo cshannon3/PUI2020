@@ -1,6 +1,8 @@
 
 
-
+#main2{
+    height: auto;
+  }
 
 .cart-content{
     display: flex;
@@ -106,12 +108,12 @@
     box-shadow: 2px 4px 4px 0 rgba(0, 0, 0, 0.2);
     margin: 20px 0px;
 } 
-.cart-text{
+ .cart-text{
     margin-top: 10px;
     color:black;
     font-size: 16px;
     text-align: left;
-}
+} 
 
 
 .item-title{

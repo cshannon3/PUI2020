@@ -6,10 +6,8 @@
     <title>Muddy Paws</title>
     <link rel="shortcut icon" href="static/icons/logo.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="scripts/default.js"></script>
-
     <link rel="stylesheet" href="styles/details.css" />
-    <script src="scripts/details.js"></script>
+    <script src="scripts/products.js"></script>
 
 </head>
 
@@ -39,10 +37,10 @@
             <p class="social-text">@muddypaws</p>
         </div>
     </div>
-    <div class="cart" >
-        <p class="cart-text">Cart</p>
+    <a class="cart" href="cart.html">
+        <p class="cart-box-text">Cart</p>
         <div class="cart-icon" id="cart-icon"></div>
-    </div>
+</a>
     </nav>
 
     <!--Content -->
@@ -55,7 +53,7 @@
         </div>
         <img id="center-img" class="center-img" src="static/images/details/blueberry.jpg" alt="blueberry">
         <div class="product-dets">
-            <h2 class="product-title">Doggy Bag Backpack</h2>
+            <h2 class="product-title" id="details-title">Doggy Bag Backpack</h2>
             <div class="gap"></div>
             <div class="stars">
                 <span class="fa fa-star fa-lg checked"></span>
@@ -67,7 +65,7 @@
             </div>
             <div class="gap"></div>
             <hr>
-            <h3 style="color: black;">$200.00</h3>
+            <h3 style="color: black;" id="details-price">$200.00</h3>
             <hr>
             <p class="product-description">
                 Do you wish you could lighten the load a little bit when you go on hikes with your dog? Well, if you
@@ -126,7 +124,7 @@
     </div>
     <div class="dets-title">Similar Products</div>
     <div class="similar-products">
-        <div class="product-card">
+        <div class="product-card" onclick="selectProduct('catpack')">
             <img class = "product-card-img" src="static/images/products/catpack.jpg" alt="cat backpack">
             <h4>CatPack Backpack</h4>
             <div class  = "items-row">
@@ -135,24 +133,75 @@
             </div>
            
         </div>
-        <div class="product-card">
+        <div class="product-card" onclick="selectProduct('harness')">
             <img class = "product-card-img" src="static/images/products/dogharness.jpg" alt="dog">
             <h4>Dog Harness</h4>
             <div class  = "items-row">
                 <span class="fa fa-star fa-sm"> <b>4.0</b></span>
                 <p class="product-price">$219.99</p>
             </div>
-            
         </div>
-        <div class="product-card">
+        <div class="product-card"  onclick="selectProduct('food')">
             <img class= "product-card-img" src="static/images/products/food-harness.jpg" alt="food-harness">
             <h4>Food Harness</h4>
             <div class  = "items-row">
                 <span class="fa fa-star"> <b>4.0</b></span>
                 <p class="product-price">$219.99</p>
             </div>
+        </div>
+        <div class="product-card" onclick="selectProduct('catpack')">
+            <img class = "product-card-img" src="static/images/products/catpack.jpg" alt="cat backpack">
+            <h4>CatPack Backpack</h4>
+            <div class  = "items-row">
+                <span class="fa fa-star"> <b>4.9</b></span>
+                <p class="product-price">$490.00</p>
+            </div>
            
         </div>
+        <div class="product-card" onclick="selectProduct('harness')">
+            <img class = "product-card-img" src="static/images/products/dogharness.jpg" alt="dog">
+            <h4>Dog Harness</h4>
+            <div class  = "items-row">
+                <span class="fa fa-star fa-sm"> <b>4.0</b></span>
+                <p class="product-price">$219.99</p>
+            </div>
+        </div>
+        <div class="product-card" onclick="selectProduct('food')">
+            <img class= "product-card-img" src="static/images/products/food-harness.jpg" alt="food-harness">
+            <h4>Food Harness</h4>
+            <div class  = "items-row">
+                <span class="fa fa-star"> <b>4.0</b></span>
+                <p class="product-price">$219.99</p>
+            </div>
+        </div>
+       
+        <div class="product-card" onclick="selectProduct('catpack')">
+            <img class = "product-card-img" src="static/images/products/catpack.jpg" alt="cat backpack">
+            <h4>CatPack Backpack</h4>
+            <div class  = "items-row">
+                <span class="fa fa-star"> <b>4.9</b></span>
+                <p class="product-price">$490.00</p>
+            </div>
+           
+        </div>
+        <div class="product-card" onclick="selectProduct('harness')">
+            <img class = "product-card-img" src="static/images/products/dogharness.jpg" alt="dog">
+            <h4>Dog Harness</h4>
+            <div class  = "items-row">
+                <span class="fa fa-star fa-sm"> <b>4.0</b></span>
+                <p class="product-price">$219.99</p>
+            </div>
+        </div>
+        <div class="product-card" onclick="selectProduct('food')">
+            <img class= "product-card-img" src="static/images/products/food-harness.jpg" alt="food-harness">
+            <h4>Food Harness</h4>
+            <div class  = "items-row">
+                <span class="fa fa-star"> <b>4.0</b></span>
+                <p class="product-price">$219.99</p>
+            </div>
+        </div>
+       
+    
        
     </div>
     <div class="dets-title">Details</div>

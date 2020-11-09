@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/cart.css" />
     <script src="scripts/default.js"></script>
-    <script src="scripts/cart.js"></script>
 </head>
 
 <body onload="onLoadCart()">
@@ -36,25 +35,23 @@
             <p class="social-text">@muddypaws</p>
         </div>
     </div>
-    <div class="cart" >
-        <p class="cart-text">Cart</p>
+    <a class="cart" href="cart.html">
+        <p class="cart-box-text">Cart</p>
         <div class="cart-icon" id="cart-icon"></div>
-    </div>
+</a>
     </nav>
     <!--Content -->
-    <div >
+    <div id="main2">
         <h3 class="cart-title">My Cart</h3>
         <div class="main">
             <div class="cart-list" id="cart-items">
-               
             </div>
-            
             <div class="totals">
                 <div class="checkout-summary">
                     <h3 class="checkout-title">Order Total</h3>
                     <div class="checkout-row">
                         <p class="checkout-subtitle">Subtotal:</p>
-                        <p class="checkout-text">$Sub</p>
+                        <p class="checkout-text" id="checkout-subtotal">$Sub</p>
                     </div>
                     <div class="checkout-row">
                         <p class="checkout-subtitle">Est Shipping:</p>
@@ -65,15 +62,13 @@
                     </div>
                     <div class="checkout-row">
                         <p class="checkout-subtitle checkout-lg">Total:</p>
-                        <p class="checkout-text checkout-lg">$Total</p>
+                        <p class="checkout-text checkout-lg" >$Total</p>
                     </div>
                     <button type="button" class="btn btn-primary checkout-button">Sign In and Check Out</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- FOOTER -->
-
        <!-- FOOTER -->
        <div class="newsletter">
         <div class="newsletter-title">Join The Club</div>
@@ -104,6 +99,5 @@
         <div class="footer-text">Site Created By Connor Shannon, 2020</div>
     </footer>
 </body>
-
 
 </html>

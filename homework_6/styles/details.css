@@ -1,4 +1,5 @@
 
+
     .product-tile{
         display: flex;
         padding: 100px 0px;
@@ -159,11 +160,12 @@
 .similar-products{
   display: flex;
   gap: 30px;
-  
-  background-color: #F9F9F9;
-    width: 90vw;
-    padding: 5px 5vw;
+  overflow: scroll;
+  /* background-color: #F9F9F9; */
+    width: 70vw;
+    margin: 5px 15vw;
     min-height: 200px;
+    max-width: 70vw;
 }
 .product-card{
   height: 200px;
